@@ -140,6 +140,7 @@ than John's? true")
 GOOD LUCK! :D
  */
 
+/*
 markMass = 50;  //kg
 johnMass = 60;
 markHeight = 1.9; // meters
@@ -152,3 +153,43 @@ johnBMI = johnMass / (johnheight *= 2);
 var comparison = (markBMI > johnBMI);
 
 console.log(`Is Mark's higher than John's? ${comparison}`);
+*/
+
+/****************************
+If / else statements
+ */
+
+var firstName = 'John';
+var civilStatus ='single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)')
+}
+
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)')
+}
+
+markMass = 50;  //kg
+johnMass = 60;
+markHeight = 1.9; // meters
+johnheight = 1.7;
+
+markBMI = markMass / (markHeight *= 2);
+johnBMI = johnMass / (johnheight *= 2);
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI is higher than John's.`)
+} else {
+    console.log(`John's BMI is higher than Mark's`)
+}
+
+// console.log(markBMI,johnBMI);
+//var comparison = (markBMI > johnBMI);
+
+//console.log(`Is Mark's higher than John's? ${comparison}`);
