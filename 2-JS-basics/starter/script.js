@@ -313,6 +313,7 @@ just watch the solution, it's no problem.
 GOOD LUCK! :D
  */
 
+/*
 var johnTeamAverage = (89 + 120 + 103) / 3;
 var mikeTeamAverage = (116 + 94 + 123) / 3;
 var maryTeamAverage = (97 + 134 + 105) / 3;
@@ -326,4 +327,35 @@ if(johnTeamAverage > mikeTeamAverage && maryTeamAverage){
 } else {
     console.log(`They all have the same score.`)
 }
+*/
+
+/***********************************
+* Functions
+ */
+
+function calculateAge(birthYear) {
+    return 2019 - birthYear;
+}
+
+var ageJohn = calculateAge(1989);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(calculateAge(30));
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if(retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`)
+    } else {
+        console.log(`${firstName} is already retired.`)
+    }
+}
+
+yearsUntilRetirement(1990, 'John');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
+
 
