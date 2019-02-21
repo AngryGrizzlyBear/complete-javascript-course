@@ -443,6 +443,7 @@ In the end, John would like to have 2 arrays:
 GOOD LUCK :D
  */
 
+/*
 var tip = function (price) {
     if(price < 50) {
         return (20 / 100) * price;
@@ -462,5 +463,34 @@ billWithTip =[
     bill[2] + billTip[2]
 ];
 console.log(billWithTip);
+*/
 
+/******************************************
+* Objects and properties
+ */
 
+// Object literal
+var john = {
+  firsName: 'John',
+  lastName: 'Smith',
+  birthYear: 1990,
+  family: ['Jane', 'Mark', 'Bob', 'Emily'],
+  job: 'teacher',
+  isMarried: false
+};
+
+console.log(john.firsName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+// new Object syntax
+var jane = new Object();
+jane.name = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
