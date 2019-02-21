@@ -678,7 +678,7 @@ var john = {
                 percentage = .1;
             }
             
-            // Add results to the corresponing arrays
+            // Add results to the corresponding arrays
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + bill * percentage;
         }
