@@ -646,81 +646,100 @@ it by the number of elements in it (that's how you calculate the average)
 Good Luck :)
  */
 
-var john = {
-    fullname: 'John Smith',
-    bills: [124, 48, 268, 180, 42],
-    calcTips: function () {
-        this.tips = [];
-        this.finalValues = [];
-        for (var i = 0; i < this.bills.length; i++) {
-            // Determine percentage based on tipping rules
-            var percentage;
-            var bill = this.bills[i];
+// var john = {
+//     fullname: 'John Smith',
+//     bills: [124, 48, 268, 180, 42],
+//     calcTips: function () {
+//         this.tips = [];
+//         this.finalValues = [];
+//         for (var i = 0; i < this.bills.length; i++) {
+//             // Determine percentage based on tipping rules
+//             var percentage;
+//             var bill = this.bills[i];
+//
+//             if (bill < 50) {
+//                 percentage = .2;
+//             } else if (bill >= 50 && bill < 200) {
+//                 percentage = .15;
+//             } else {
+//                 percentage = .1;
+//             }
+//             // Add results to the corresponding arrays
+//             this.tips[i] = bill * percentage;
+//             this.finalValues[i] = bill + bill * percentage;
+//         }
+//     }
+// };
+//
+// john.calcTips();
+// console.log(john);
+//
+//
+// var mark = {
+//     fullname: 'Mark Miller',
+//     bills: [77, 475, 110, 45],
+//     calcTips: function () {
+//         this.tips = [];
+//         this.finalValues = [];
+//         for (var i = 0; i < this.bills.length; i++) {
+//             // Determine percentage based on tipping rules
+//             var percentage;
+//             var bill = this.bills[i];
+//
+//             if (bill < 100) {
+//                 percentage = .2;
+//             } else if (bill >= 100 && bill < 300) {
+//                 percentage = .1;
+//             } else {
+//                 percentage = .25;
+//             }
+//             // Add results to the corresponding arrays
+//             this.tips[i] = bill * percentage;
+//             this.finalValues[i] = bill + bill * percentage;
+//         }
+//     }
+// };
+//
+// function calcAverage(tips) {
+//   var sum = 0;
+//   for (var i = 0; i < tips.length; i++) {
+//       sum = sum + tips [i];
+//   }
+//   return sum / tips.length;
+// }
+// // [2, 6, 4] -> 0 / 2 / 8 / 12
+//
+// // Do the calculations
+// john.calcTips();
+// mark.calcTips();
+// console.log(john, mark);
+//
+// john.average = calcAverage(john.tips);
+// mark.average  = calcAverage(mark.tips);
+// console.log(john, mark);
+//
+// if (john.average > mark.average) {
+//     console.log(`${john.fullname} family pays higher tips with an average of $${john.average}`)
+// } else {
+//     console.log(`${mark.fullname} family pays higher tips with an average of $${mark.average}`)
+//
+// }
 
-            if (bill < 50) {
-                percentage = .2;
-            } else if (bill >= 50 && bill < 200) {
-                percentage = .15;
-            } else {
-                percentage = .1;
-            }
-            // Add results to the corresponding arrays
-            this.tips[i] = bill * percentage;
-            this.finalValues[i] = bill + bill * percentage;
-        }
+function sum_array(arr) {
+
+    // store our final answer
+    var sum = 0;
+
+    // code here
+    for ( let i = 0; i < arr.length; i++ ) {
+       for (let j = 0; j < arr[i].length; j++) {
+          sum = arr[i][j] + sum;
+       }
     }
-};
 
-john.calcTips();
-console.log(john);
-
-
-var mark = {
-    fullname: 'Mark Miller',
-    bills: [77, 475, 110, 45],
-    calcTips: function () {
-        this.tips = [];
-        this.finalValues = [];
-        for (var i = 0; i < this.bills.length; i++) {
-            // Determine percentage based on tipping rules
-            var percentage;
-            var bill = this.bills[i];
-
-            if (bill < 100) {
-                percentage = .2;
-            } else if (bill >= 100 && bill < 300) {
-                percentage = .1;
-            } else {
-                percentage = .25;
-            }
-            // Add results to the corresponding arrays
-            this.tips[i] = bill * percentage;
-            this.finalValues[i] = bill + bill * percentage;
-        }
-    }
-};
-
-function calcAverage(tips) {
-  var sum = 0;
-  for (var i = 0; i < tips.length; i++) {
-      sum = sum + tips [i];
-  }
-  return sum / tips.length;
-}
-// [2, 6, 4] -> 0 / 2 / 8 / 12
-
-// Do the calculations
-john.calcTips();
-mark.calcTips();
-console.log(john, mark);
-
-john.average = calcAverage(john.tips);
-mark.average  = calcAverage(mark.tips);
-console.log(john, mark);
-
-if (john.average > mark.average) {
-    console.log(`${john.fullname} family pays higher tips with an average of $${john.average}`)
-} else {
-    console.log(`${mark.fullname} family pays higher tips with an average of $${mark.average}`)
+    return sum;
 
 }
+const a = [ [3, 2], [1], [4, 12] ];
+// console.log(`first element of first array is ${a[0][0]}`);
+console.log(sum_array(a)); // return value should be 22
