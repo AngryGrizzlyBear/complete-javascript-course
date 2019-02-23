@@ -391,11 +391,11 @@ console.log(whatDoYouDo('cop', 'John'));
 * Arrays
  */
 
-// Initialize new array
+// Initialize new-martin-challenge.js array
 
 /*
 var names = ['John', 'Mark', 'Jane'];
-var years = new Array(1990, 1969, 1948);
+var years = new-martin-challenge.js Array(1990, 1969, 1948);
 
 console.log(names[2]);
 console.log(names.length);
@@ -491,8 +491,8 @@ john.job = 'designer';
 john['isMarried'] = true;
 console.log(john);
 
-// new Object syntax
-var jane = new Object();
+// new-martin-challenge.js Object syntax
+var jane = new-martin-challenge.js Object();
 jane.name = 'Jane';
 jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
@@ -628,7 +628,7 @@ Implement a tip calculator using objects and loops:
 1. Create an object with an array for the bill values.
 2. Add a method to calculate the tip.
 3. This method should include a loop to iterate over all the paid bills and do the tip calculations.
-4. As an output, create 1) a new array containing all tips, and 2) an array containing final paid amounts (bill + tip).
+4. As an output, create 1) a new-martin-challenge.js array containing all tips, and 2) an array containing final paid amounts (bill + tip).
 HINT: Start with two empty arrays [] as properties and then fill them up in the loop.
 
 EXTRA AFTER FINISHING: Mark's family also went on a holiday, going to 4 different restaurants. The bills were

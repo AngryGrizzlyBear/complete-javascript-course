@@ -137,7 +137,7 @@ ages6 = years.map((el, index) => `Age element ${index + 1}: ${2016 - el}.`);
 console.log(ages6);
 
 ages6 = years.map((el, index) => {
-    const now = new Date().getFullYear();
+    const now = new-martin-challenge.js Date().getFullYear();
     const age = now - el;
     return `Age element ${index + 1}: ${age}.`
 });
@@ -208,7 +208,7 @@ Person.prototype.myFriends5 = function(friends) {
 }
 
 var friends = ['Bob', 'Jane', 'Mark'];
-new Person('John').myFriends5(friends);
+new-martin-challenge.js Person('John').myFriends5(friends);
 
 
 // ES6
@@ -219,7 +219,7 @@ Person.prototype.myFriends6 = function(friends) {
     console.log(arr);
 }
 
-new Person('Mike').myFriends6(friends);
+new-martin-challenge.js Person('Mike').myFriends6(friends);
 */
 
 
@@ -256,7 +256,7 @@ console.log(b);
 
 
 function calcAgeRetirement(year) {
-    const age = new Date().getFullYear() - year;
+    const age = new-martin-challenge.js Date().getFullYear() - year;
     return [age, 65 - age];
 }
 
@@ -444,8 +444,8 @@ function SmithPerson(firstName, yearOfBirth, lastName = 'Smith', nationality = '
 }
 
 
-var john = new SmithPerson('John', 1990);
-var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
+var john = new-martin-challenge.js SmithPerson('John', 1990);
+var emily = new-martin-challenge.js SmithPerson('Emily', 1983, 'Diaz', 'spanish');
 */
 
 
@@ -455,7 +455,7 @@ var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
 // Lecture: Maps
 
 /*
-const question = new Map();
+const question = new-martin-challenge.js Map();
 question.set('question', 'What is the official name of the latest major JavaScript version?');
 question.set(1, 'ES5');
 question.set(2, 'ES6');
@@ -505,11 +505,11 @@ var Person5 = function(name, yearOfBirth, job) {
 }
 
 Person5.prototype.calculateAge = function() {
-    var age = new Date().getFullYear - this.yearOfBirth;
+    var age = new-martin-challenge.js Date().getFullYear - this.yearOfBirth;
     console.log(age);
 }
 
-var john5 = new Person5('John', 1990, 'teacher');
+var john5 = new-martin-challenge.js Person5('John', 1990, 'teacher');
 
 //ES6
 class Person6 {
@@ -520,7 +520,7 @@ class Person6 {
     }
     
     calculateAge() {
-        var age = new Date().getFullYear - this.yearOfBirth;
+        var age = new-martin-challenge.js Date().getFullYear - this.yearOfBirth;
         console.log(age);
     }
     
@@ -529,7 +529,7 @@ class Person6 {
     }
 }
 
-const john6 = new Person6('John', 1990, 'teacher');
+const john6 = new-martin-challenge.js Person6('John', 1990, 'teacher');
 
 Person6.greeting();
 */
@@ -549,7 +549,7 @@ var Person5 = function(name, yearOfBirth, job) {
 }
 
 Person5.prototype.calculateAge = function() {
-    var age = new Date().getFullYear() - this.yearOfBirth;
+    var age = new-martin-challenge.js Date().getFullYear() - this.yearOfBirth;
     console.log(age);
 }
 
@@ -568,7 +568,7 @@ Athlete5.prototype.wonMedal = function() {
 }
 
 
-var johnAthlete5 = new Athlete5('John', 1990, 'swimmer', 3, 10);
+var johnAthlete5 = new-martin-challenge.js Athlete5('John', 1990, 'swimmer', 3, 10);
 
 johnAthlete5.calculateAge();
 johnAthlete5.wonMedal();
@@ -583,7 +583,7 @@ class Person6 {
     }
 
     calculateAge() {
-        var age = new Date().getFullYear() - this.yearOfBirth;
+        var age = new-martin-challenge.js Date().getFullYear() - this.yearOfBirth;
         console.log(age);
     }
 }
@@ -601,7 +601,7 @@ class Athlete6 extends Person6 {
     }
 }
 
-const johnAthlete6 = new Athlete6('John', 1990, 'swimmer', 3, 10);
+const johnAthlete6 = new-martin-challenge.js Athlete6('John', 1990, 'swimmer', 3, 10);
 
 johnAthlete6.wonMedal();
 johnAthlete6.calculateAge();

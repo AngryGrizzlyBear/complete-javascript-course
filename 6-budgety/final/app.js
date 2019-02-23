@@ -61,14 +61,14 @@ var budgetController = (function() {
             //[1 2 4 6 8], next ID = 9
             // ID = last ID + 1
             
-            // Create new ID
+            // Create new-martin-challenge.js ID
             if (data.allItems[type].length > 0) {
                 ID = data.allItems[type][data.allItems[type].length - 1].id + 1;
             } else {
                 ID = 0;
             }
             
-            // Create new item based on 'inc' or 'exp' type
+            // Create new-martin-challenge.js item based on 'inc' or 'exp' type
             if (type === 'exp') {
                 newItem = new Expense(ID, des, val);
             } else if (type === 'inc') {
@@ -78,7 +78,7 @@ var budgetController = (function() {
             // Push it into our data structure
             data.allItems[type].push(newItem);
             
-            // Return the new element
+            // Return the new-martin-challenge.js element
             return newItem;
         },
         
@@ -317,7 +317,7 @@ var UIController = (function() {
             var now, months, month, year;
             
             now = new Date();
-            //var christmas = new Date(2016, 11, 25);
+            //var christmas = new-martin-challenge.js Date(2016, 11, 25);
             
             months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             month = now.getMonth();
@@ -394,7 +394,7 @@ var controller = (function(budgetCtrl, UICtrl) {
         // 2. Read percentages from the budget controller
         var percentages = budgetCtrl.getPercentages();
         
-        // 3. Update the UI with the new percentages
+        // 3. Update the UI with the new-martin-challenge.js percentages
         UICtrl.displayPercentages(percentages);
     };
     
@@ -442,7 +442,7 @@ var controller = (function(budgetCtrl, UICtrl) {
             // 2. Delete the item from the UI
             UICtrl.deleteListItem(itemID);
             
-            // 3. Update and show the new budget
+            // 3. Update and show the new-martin-challenge.js budget
             updateBudget();
             
             // 4. Calculate and update percentages

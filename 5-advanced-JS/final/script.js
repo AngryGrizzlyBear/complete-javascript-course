@@ -19,9 +19,9 @@ Person.prototype.calculateAge  = function() {
 
 Person.prototype.lastName = 'Smith';
 
-var john = new Person('John', 1990, 'teacher');
-var jane = new Person('Jane', 1969, 'designer');
-var mark = new Person('Mark', 1948, 'retired');
+var john = new-martin-challenge.js Person('John', 1990, 'teacher');
+var jane = new-martin-challenge.js Person('Jane', 1969, 'designer');
+var mark = new-martin-challenge.js Person('Mark', 1948, 'retired');
 
 john.calculateAge();
 jane.calculateAge();
@@ -354,15 +354,15 @@ c) correct answer (I would use a number for this)
         }
     }
 
-    var q1 = new Question('Is JavaScript the coolest programming language in the world?',
+    var q1 = new-martin-challenge.js Question('Is JavaScript the coolest programming language in the world?',
                           ['Yes', 'No'],
                           0);
 
-    var q2 = new Question('What is the name of this course\'s teacher?',
+    var q2 = new-martin-challenge.js Question('What is the name of this course\'s teacher?',
                           ['John', 'Micheal', 'Jonas'],
                           2);
 
-    var q3 = new Question('What does best describe coding?',
+    var q3 = new-martin-challenge.js Question('What does best describe coding?',
                           ['Boring', 'Hard', 'Fun', 'Tediuos'],
                           2);
 
@@ -429,15 +429,15 @@ c) correct answer (I would use a number for this)
     }
     
     
-    var q1 = new Question('Is JavaScript the coolest programming language in the world?',
+    var q1 = new-martin-challenge.js Question('Is JavaScript the coolest programming language in the world?',
                           ['Yes', 'No'],
                           0);
 
-    var q2 = new Question('What is the name of this course\'s teacher?',
+    var q2 = new-martin-challenge.js Question('What is the name of this course\'s teacher?',
                           ['John', 'Micheal', 'Jonas'],
                           2);
 
-    var q3 = new Question('What does best describe coding?',
+    var q3 = new-martin-challenge.js Question('What does best describe coding?',
                           ['Boring', 'Hard', 'Fun', 'Tediuos'],
                           2);
     

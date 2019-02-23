@@ -77,7 +77,7 @@ const controlRecipe = async () => {
         // Highlight selected search item
         if (state.search) searchView.highlightSelected(id);
 
-        // Create new recipe object
+        // Create new-martin-challenge.js recipe object
         state.recipe = new Recipe(id);
 
         try {
@@ -110,7 +110,7 @@ const controlRecipe = async () => {
  * LIST CONTROLLER
  */
 const controlList = () => {
-    // Create a new list IF there in none yet
+    // Create a new-martin-challenge.js list IF there in none yet
     if (!state.list) state.list = new List();
 
     // Add each ingredient to the list and UI

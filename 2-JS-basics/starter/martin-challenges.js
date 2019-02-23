@@ -21,3 +21,6 @@ var james = make_block([
     ['bye']
 ]); // return value should be 'hello,\nmy name is triggered grizzly bear.\ngood day to you, sir.\nbye'
 console.log(james);
+
+const o = [ { a: 1 } ];
+console.log(o[0].a);
