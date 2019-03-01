@@ -108,7 +108,7 @@ function nextPlayer() {
     document.getElementById('dice-2').style.display = 'none';
 }
 
-document.querySelector('.btn-new-martin-challenge.js').addEventListener('click', init);
+document.querySelector('.btn-new').addEventListener('click', init);
 
 function init() {
     scores = [0, 0];
